@@ -35,7 +35,7 @@ public class ReturnTrip {
     private String destinationCity;
 
     @Column(nullable = false)
-    private LocalDateTime departureTime;
+    private LocalDateTime departureDate;
 
     @Column(nullable = false)
     private Double availableCapacityTons;
