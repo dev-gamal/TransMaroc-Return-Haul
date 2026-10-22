@@ -3,8 +3,10 @@ package com.app.transmaroc.mapper;
 import com.app.transmaroc.dto.ShipmentRequestDTO;
 import com.app.transmaroc.dto.ShipmentResponseDTO;
 import com.app.transmaroc.entities.Shipment;
+import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
+@Mapper(componentModel = "spring")
 public interface ShipmentMapper {
 
     @Mapping(source = "shipper.companyName", target = "shipperCompanyName")

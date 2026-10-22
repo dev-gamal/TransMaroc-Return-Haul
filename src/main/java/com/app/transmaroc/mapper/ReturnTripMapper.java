@@ -3,8 +3,10 @@ package com.app.transmaroc.mapper;
 import com.app.transmaroc.dto.ReturnTripRequestDTO;
 import com.app.transmaroc.dto.ReturnTripResponseDTO;
 import com.app.transmaroc.entities.ReturnTrip;
+import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
+@Mapper(componentModel = "spring")
 public interface ReturnTripMapper {
 
     @Mapping(source = "carrier.companyName", target = "carrierCompanyName")
